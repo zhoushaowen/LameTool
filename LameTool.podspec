@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   
   s.source_files  = "LameTool/LameTool/*.{h,m}"
 
-  s.resources  = "LameTool/LameTool/libmp3lame.a"
+  s.ios.vendored_libraries = 'LameTool/LameTool/libmp3lame.a'
   
   s.requires_arc = true
 
