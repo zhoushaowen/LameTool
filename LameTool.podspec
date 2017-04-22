@@ -16,7 +16,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/zhoushaowen/LameTool.git", :tag => s.version }
   
-  s.source_files  = "LameTool/LameTool/*.{h,m,a}"
+  s.source_files  = "LameTool/LameTool/*.{h,m}"
+
+  s.resources  = "LameTool/LameTool/libmp3lame.a"
   
   s.requires_arc = true
 
